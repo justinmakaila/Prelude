@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C4063F81A390FD4007439A2 /* Prelude-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C4063F71A390FD4007439A2 /* Prelude-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C40640E1A39129A007439A2 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D33D9E19FE8FAE001D051D /* Prelude.swift */; };
+		7C40640F1A39129A007439A2 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BC08F21A3385BE007D52F8 /* Application.swift */; };
+		7C4064101A39129A007439A2 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAEF821A2D6091006E25DF /* Compose.swift */; };
+		7C4064111A39129A007439A2 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7A8081A2D3A6A0080A4DF /* Curry.swift */; };
+		7C4064121A39129A007439A2 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF0411A2E79D6006E25DF /* Fix.swift */; };
+		7C4064131A39129A007439A2 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C9A1161A34D5E5009C6CD3 /* Flip.swift */; };
+		7C4064141A3912C9007439A2 /* Prelude.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D33D8719FE8F8C001D051D /* Prelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4BAEF831A2D6091006E25DF /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAEF821A2D6091006E25DF /* Compose.swift */; };
 		D4BAEF851A2D609A006E25DF /* ComposeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAEF841A2D609A006E25DF /* ComposeTests.swift */; };
 		D4BAF0421A2E79D6006E25DF /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF0411A2E79D6006E25DF /* Fix.swift */; };
@@ -36,10 +42,6 @@
 
 /* Begin PBXFileReference section */
 		7C4063F31A390FD4007439A2 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C4063F61A390FD4007439A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C4063F71A390FD4007439A2 /* Prelude-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prelude-iOS.h"; sourceTree = "<group>"; };
-		7C4064031A390FD4007439A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C4064041A390FD4007439A2 /* Prelude_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prelude_iOSTests.swift; sourceTree = "<group>"; };
 		D4BAEF821A2D6091006E25DF /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		D4BAEF841A2D609A006E25DF /* ComposeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTests.swift; sourceTree = "<group>"; };
 		D4BAF0411A2E79D6006E25DF /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fix.swift; sourceTree = "<group>"; };
@@ -85,47 +87,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C4063F41A390FD4007439A2 /* Prelude-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				7C4063F71A390FD4007439A2 /* Prelude-iOS.h */,
-				7C4063F51A390FD4007439A2 /* Supporting Files */,
-			);
-			path = "Prelude-iOS";
-			sourceTree = "<group>";
-		};
-		7C4063F51A390FD4007439A2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C4063F61A390FD4007439A2 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7C4064011A390FD4007439A2 /* Prelude-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				7C4064041A390FD4007439A2 /* Prelude_iOSTests.swift */,
-				7C4064021A390FD4007439A2 /* Supporting Files */,
-			);
-			path = "Prelude-iOSTests";
-			sourceTree = "<group>";
-		};
-		7C4064021A390FD4007439A2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C4064031A390FD4007439A2 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D4D33D7819FE8F8C001D051D = {
 			isa = PBXGroup;
 			children = (
 				D4D33D8419FE8F8C001D051D /* Prelude */,
 				D4D33D9119FE8F8C001D051D /* PreludeTests */,
-				7C4063F41A390FD4007439A2 /* Prelude-iOS */,
-				7C4064011A390FD4007439A2 /* Prelude-iOSTests */,
 				D4D33D8319FE8F8C001D051D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,7 +158,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4063F81A390FD4007439A2 /* Prelude-iOS.h in Headers */,
+				7C4064141A3912C9007439A2 /* Prelude.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C40640E1A39129A007439A2 /* Prelude.swift in Sources */,
+				7C40640F1A39129A007439A2 /* Application.swift in Sources */,
+				7C4064101A39129A007439A2 /* Compose.swift in Sources */,
+				7C4064111A39129A007439A2 /* Curry.swift in Sources */,
+				7C4064121A39129A007439A2 /* Fix.swift in Sources */,
+				7C4064131A39129A007439A2 /* Flip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +355,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Prelude-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Prelude/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -404,7 +376,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Prelude-iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Prelude/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
