@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4063F81A390FD4007439A2 /* Prelude-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C4063F71A390FD4007439A2 /* Prelude-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C4063FE1A390FD4007439A2 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4063F31A390FD4007439A2 /* Prelude.framework */; };
+		7C4064051A390FD4007439A2 /* Prelude_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4064041A390FD4007439A2 /* Prelude_iOSTests.swift */; };
 		D4BAEF831A2D6091006E25DF /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAEF821A2D6091006E25DF /* Compose.swift */; };
 		D4BAEF851A2D609A006E25DF /* ComposeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAEF841A2D609A006E25DF /* ComposeTests.swift */; };
 		D4BAF0421A2E79D6006E25DF /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BAF0411A2E79D6006E25DF /* Fix.swift */; };
@@ -24,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7C4063FF1A390FD4007439A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D33D7919FE8F8C001D051D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C4063F21A390FD4007439A2;
+			remoteInfo = "Prelude-iOS";
+		};
 		D4D33D8F19FE8F8C001D051D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4D33D7919FE8F8C001D051D /* Project object */;
@@ -34,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C4063F31A390FD4007439A2 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4063F61A390FD4007439A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4063F71A390FD4007439A2 /* Prelude-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Prelude-iOS.h"; sourceTree = "<group>"; };
+		7C4063FD1A390FD4007439A2 /* Prelude-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Prelude-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4064031A390FD4007439A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C4064041A390FD4007439A2 /* Prelude_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prelude_iOSTests.swift; sourceTree = "<group>"; };
 		D4BAEF821A2D6091006E25DF /* Compose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compose.swift; sourceTree = "<group>"; };
 		D4BAEF841A2D609A006E25DF /* ComposeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTests.swift; sourceTree = "<group>"; };
 		D4BAF0411A2E79D6006E25DF /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fix.swift; sourceTree = "<group>"; };
@@ -54,6 +70,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7C4063EF1A390FD4007439A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4063FA1A390FD4007439A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4063FE1A390FD4007439A2 /* Prelude.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4D33D7E19FE8F8C001D051D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,11 +103,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C4063F41A390FD4007439A2 /* Prelude-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7C4063F71A390FD4007439A2 /* Prelude-iOS.h */,
+				7C4063F51A390FD4007439A2 /* Supporting Files */,
+			);
+			path = "Prelude-iOS";
+			sourceTree = "<group>";
+		};
+		7C4063F51A390FD4007439A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C4063F61A390FD4007439A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C4064011A390FD4007439A2 /* Prelude-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C4064041A390FD4007439A2 /* Prelude_iOSTests.swift */,
+				7C4064021A390FD4007439A2 /* Supporting Files */,
+			);
+			path = "Prelude-iOSTests";
+			sourceTree = "<group>";
+		};
+		7C4064021A390FD4007439A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C4064031A390FD4007439A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D4D33D7819FE8F8C001D051D = {
 			isa = PBXGroup;
 			children = (
 				D4D33D8419FE8F8C001D051D /* Prelude */,
 				D4D33D9119FE8F8C001D051D /* PreludeTests */,
+				7C4063F41A390FD4007439A2 /* Prelude-iOS */,
+				7C4064011A390FD4007439A2 /* Prelude-iOSTests */,
 				D4D33D8319FE8F8C001D051D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +153,8 @@
 			children = (
 				D4D33D8219FE8F8C001D051D /* Prelude.framework */,
 				D4D33D8D19FE8F8C001D051D /* PreludeTests.xctest */,
+				7C4063F31A390FD4007439A2 /* Prelude.framework */,
+				7C4063FD1A390FD4007439A2 /* Prelude-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +207,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		7C4063F01A390FD4007439A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4063F81A390FD4007439A2 /* Prelude-iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4D33D7F19FE8F8C001D051D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,6 +226,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7C4063F21A390FD4007439A2 /* Prelude-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C40640A1A390FD4007439A2 /* Build configuration list for PBXNativeTarget "Prelude-iOS" */;
+			buildPhases = (
+				7C4063EE1A390FD4007439A2 /* Sources */,
+				7C4063EF1A390FD4007439A2 /* Frameworks */,
+				7C4063F01A390FD4007439A2 /* Headers */,
+				7C4063F11A390FD4007439A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Prelude-iOS";
+			productName = "Prelude-iOS";
+			productReference = 7C4063F31A390FD4007439A2 /* Prelude.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C4063FC1A390FD4007439A2 /* Prelude-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C40640B1A390FD4007439A2 /* Build configuration list for PBXNativeTarget "Prelude-iOSTests" */;
+			buildPhases = (
+				7C4063F91A390FD4007439A2 /* Sources */,
+				7C4063FA1A390FD4007439A2 /* Frameworks */,
+				7C4063FB1A390FD4007439A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C4064001A390FD4007439A2 /* PBXTargetDependency */,
+			);
+			name = "Prelude-iOSTests";
+			productName = "Prelude-iOSTests";
+			productReference = 7C4063FD1A390FD4007439A2 /* Prelude-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D4D33D8119FE8F8C001D051D /* Prelude */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4D33D9819FE8F8C001D051D /* Build configuration list for PBXNativeTarget "Prelude" */;
@@ -192,8 +305,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Rob Rix";
+				ORGANIZATIONNAME = antitypical;
 				TargetAttributes = {
+					7C4063F21A390FD4007439A2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7C4063FC1A390FD4007439A2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					D4D33D8119FE8F8C001D051D = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -216,11 +335,27 @@
 			targets = (
 				D4D33D8119FE8F8C001D051D /* Prelude */,
 				D4D33D8C19FE8F8C001D051D /* PreludeTests */,
+				7C4063F21A390FD4007439A2 /* Prelude-iOS */,
+				7C4063FC1A390FD4007439A2 /* Prelude-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7C4063F11A390FD4007439A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4063FB1A390FD4007439A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4D33D8019FE8F8C001D051D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +373,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7C4063EE1A390FD4007439A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C4063F91A390FD4007439A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4064051A390FD4007439A2 /* Prelude_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D4D33D7D19FE8F8C001D051D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +417,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7C4064001A390FD4007439A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C4063F21A390FD4007439A2 /* Prelude-iOS */;
+			targetProxy = 7C4063FF1A390FD4007439A2 /* PBXContainerItemProxy */;
+		};
 		D4D33D9019FE8F8C001D051D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D4D33D8119FE8F8C001D051D /* Prelude */;
@@ -275,6 +430,86 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7C4064061A390FD4007439A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Prelude-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C4064071A390FD4007439A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Prelude-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C4064081A390FD4007439A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Prelude-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C4064091A390FD4007439A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Prelude-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D4D33D9619FE8F8C001D051D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +663,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7C40640A1A390FD4007439A2 /* Build configuration list for PBXNativeTarget "Prelude-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4064061A390FD4007439A2 /* Debug */,
+				7C4064071A390FD4007439A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C40640B1A390FD4007439A2 /* Build configuration list for PBXNativeTarget "Prelude-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C4064081A390FD4007439A2 /* Debug */,
+				7C4064091A390FD4007439A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D4D33D7C19FE8F8C001D051D /* Build configuration list for PBXProject "Prelude" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
